@@ -1,279 +1,229 @@
-var medicalstore={
-    medicaldetails: {
-        nameofmedicalstore: "",
-        medicalid: "ms0101"
-    },
-    "racks":[{
-        id:"rack1",
-        self_Details:[{
-            shelfName:"self1",
-           tablets:[{
-               id:"tablet1",
-               totalnooftablet: 100,
-               availabletablets: 100,
-               saletablet: 0,
-            },
-            {
-                id:"tablet2",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet3",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-        },{
-            shelfName:"self2",
-            tablets:[{
-                id:"tablet4",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-             },
-             {
-                 id:"tablet5", 
-                 totalnooftablet: 100,
-                 availabletablets: 100,
-                 saletablet: 0,
-             },
-             {
-                 id:"tablet6",
-                 totalnooftablet: 100,
-                 availabletablets: 100,
-                 saletablet: 0,
-             }],
-         },{
-            shelfName:"self3",
-            tablets:[{
-                id:"tablet7",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-             },
-             {
-                 id:"tablet8", 
-                 totalnooftablet: 100,
-                 availabletablets: 100,
-                 saletablet: 0,
-             },
-             {
-                 id:"tablet9",
-                 totalnooftablet: 100,
-                 availabletablets: 100,
-                 saletablet: 0,
-             }],
-         }],
-    },{
-        id:"rack2",
-        self_Details:[{
-            shelfName:"self1",
-           tablets:[{
-               id:"tablet10",
-                totalnooftablet: 100,
-               availabletablets: 100,
-               saletablet: 0,
-            },
-            {
-               id:"tablet11",
-               totalnooftablet: 100,
-               availabletablets: 100,
-               saletablet: 0,
-            },
-            {
-                id:"tablet12",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }
-            ],
-        },{
-            shelfName:"self2",
-            tablets:[{
-                id:"tablet13", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-             },
-             {
-                id:"tablet14",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-             },
-             {
-                 id:"tablet15",
-                 totalnooftablet: 100,
-                 availabletablets: 100,
-                 saletablet: 0,
-             }
-             ],
-         },{
-            shelfName:"self3",
-            tablets:[{
-                    id:"tablet16",
-                    totalnooftablet: 100,
-                    availabletablets: 100,
-                    saletablet: 0,
-                },
-                {
-                    id:"tablet17", 
-                    totalnooftablet: 100,
-                    availabletablets: 100,
-                    saletablet: 0,
-                },
-                {
-                id:"tablet18",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-             
-        }],
-    },{
-        id:"rack3",
-        self_Details:[{
-            shelfName:"self1",
-            tablets:[{
-                id:"tablet19", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet20",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet21", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-        },{
-            shelfName:"self2",
-            tablets:[{
-                id:"tablet22",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet23",
-                 totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet24",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-        },{
-            shelfName:"self3",
-            tablets:[{
-                id:"tablet25",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-
-            },
-            {
-                id:"tablet26",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet27", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-        }],
-    },{
-        id:"rack4",
-        self_Details:[{
-            shelfName:"self1",
-            tablets:[{
-                id:"tablet28",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet29",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet30", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-
-            }],
-        },{
-            shelfName:"self2",
-            tablets:[{
-                id:"tablet31", 
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet32",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet33",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            }],
-        },{
-            shelfName:"self3",
-            tablets:[{
-                id:"tablet34",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet35",
-                totalnooftablet: 100,
-                availabletablets: 100,
-                saletablet: 0,
-            },
-            {
-                id:"tablet36",
-                 totalnooftablet: 100,
-                    availabletablets: 100,
-                    saletablet: 0,
-            }],
-        }],
-    }],
-    
-};
-var a = "tablet10";
-var result=search(a,medicalstore);
-function search(a,rack_details){
-for (var i = 0; i <= rack_details.racks.length; i++) {
-    for (var j = 0; j < rack_details.racks[i]['self_Details'].length; j++) {
-        for (var k = 0; k < rack_details.racks[i]['self_Details'][j]['tablets'].length; k++) {
-            if (rack_details.racks[i]['self_Details'][j]['tablets'][k].id === a) {
-                return "racks" + (i + 1) +"..."+ "self" + (j + 1)+"..." + "tablets"+(k + 1)+ "--" +JSON.stringify(rack_details.racks[i]['self_Details'][j]['tablets'][k]);
-            }
-        }
-    }
+type medicalDetails={
+    id:string;
+    availabletablets: number;
 }
+var medicalstore = {
+  medicaldetails: {
+      nameofmedicalstore: "",
+      medicalid: "ms0101"
+  },
+  medicalDetails: [{
+          id: "tablet1",
+          availabletablets: 100,
+      }, {
+          id: "tablet2",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet3",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet4",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet5",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet6",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet7",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet8",
+          availabletablets: 100,
+          
+      }, {
+          id: "tablet9",
+          availabletablets: 100,
+         
+      }, {
+          id: "tablet10",
+          availabletablets: 100,
+        
+      }, {
+          id: "tablet11",
+          availabletablets: 100,
+          
+      }, {
+          id: "tablet12",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet13",
+          availabletablets: 100,
+          rackid:"rack1",
+      },
+      {
+          id: "tablet14",
+          availabletablets: 100,
+          rackid:"rack1",
+      },
+      {
+          id: "tablet15",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet16",
+          availabletablets: 100,
+          rackid:"rack1",
+      },
+      {
+          id: "tablet17",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet18",
+          availabletablets: 100,
+          rackid:"rack1",
+      },
+      {
+          id: "tablet19",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet20",
+          availabletablets: 100, 
+          rackid:"rack1",
+      }, {
+          id: "tablet21",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet22",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet23",
+          availabletablets: 100,
+           rackid:"rack1",
+
+      }, {
+          id: "tablet24",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet25",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet26",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet27",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet28",
+          availabletablets: 100,
+          rackid:"rack1",
+      }, {
+          id: "tablet29",
+          availabletablets: 100,
+           rackid:"rack1",
+      }, {
+          id: "tablet30",
+          availabletablets: 100
+      }, {
+          id: "tablet31",
+          availabletablets: 100
+      }, {
+          id: "tablet32",
+          availabletablets: 100
+      }, {
+          id: "tablet33",
+          availabletablets: 100
+      }, {
+          id: "tablet34",
+          availabletablets: 100
+      }, {
+          id: "tablet35",
+          availabletablets: 100
+      }, {
+          id: "tablet36",
+          availabletablets: 100
+      }, {
+          id: "tablet37",
+          availabletablets: 100
+      }, {
+          id: "tablet38",
+          availabletablets: 100
+      }, {
+          id: "tablet39",
+          availabletablets: 100
+      }, {
+          id: "tablet40",
+          availabletablets: 100
+      }, {
+          id: "tablet41",
+          availabletablets: 100
+      }, {
+          id: "tablet42",
+          availabletablets: 100
+      }, {
+          id: "tablet43",
+          availabletablets: 100
+      }, {
+          id: "tablet44",
+          availabletablets: 100
+      }, {
+          id: "tablet45",
+          availabletablets: 100
+  }]
 };
-console.log(result);
+var a:string;
+var n:string;
+var styleEle:any;
+styleEle = document.createElement("style");
+document.head.appendChild(styleEle);
+function getStyle(tabletID) {
+  var rackID = document.getElementById(tabletID).parentElement.parentElement.parentElement.id;
+  return ".container > :not(#" + rackID + ") { opacity:0.05; pointer-events:all }"
+};
+
+function search() {
+  if (active){
+      document.getElementById(medicalstore.medicalDetails[i].id).style.backgroundColor="none";
+  }
+  a = (document.getElementById("numb")as HTMLFormElement).value;
+  var active=a;
+  
+  var styleStr = getStyle(a);
+  styleEle.textContent = styleStr;
+  for (var i = 0; i <= medicalstore.medicalDetails.length; i++) {
+      if (medicalstore.medicalDetails[i].id === a) {
+         console.log(medicalstore.medicalDetails[i].id);
+      i = i+1;
+      n = ("Rack Number:" + (Math.ceil(i / 9)) + "," + "Shelf Number:" + (Math.ceil((i % 9) / 3)));
+      document.getElementById("demo").innerHTML = n;
+      i=i-1;
+        document.getElementById(medicalstore.medicalDetails[i].id).style.backgroundColor="green";
+       console.log(document.getElementById(medicalstore.medicalDetails[i].id).parentElement);
+      return medicalstore.medicalDetails[i];
+      }
+  }
+};
+var tabletDetails:medicalDetails;
+var m:number;
+var saledTablet:number;
+function billing() {
+  tabletDetails = search();
+  saledTablet = (document.getElementById("numb1")as HTMLFormElement).value;
+  tabletDetails.availabletablets = tabletDetails.availabletablets - saledTablet;
+  m =tabletDetails.availabletablets;
+  document.getElementById("s1").innerHTML = m.toString();
+  console.log(tabletDetails.id);
+  if(m<30){
+      document.getElementById(tabletDetails.id).style.backgroundColor="red";
+  }
+}
+;
+function reload() {
+  location.reload();
+}
