@@ -317,3 +317,9 @@ body{
 .border2{
     border-bottom:1px solid black; 
 }
+#demo{
+    color:blue;
+}
+#s1{
+    color:red;
+}

@@ -173,18 +173,20 @@ var tabletDetails:medicalDetails;
 var m:number;
 var saledTablet:number;
 var present1:string;
+var present2:string;
 r= document.querySelector(':root');
 function search() {
     if (present) {
         let previousEle = document.getElementById(present);
          previousEle.classList.remove("green");
+         document.getElementById(present2).classList.remove("yellow");
      }
     a = (document.getElementById("numb")as HTMLFormElement).value || value1;
    
 for (var i = 0; i <= medicalstore.medicalDetails.length; i++) {
          if(medicalstore.medicalDetails[i].id===a){
             i = i + 1;
-            n = ("Rack Number : " + (Math.ceil(i / 9)) + "," + "Shelf Number : " + (Math.ceil((i % 9) / 3))) + "Tablet Number : " + i;
+            n = ("Rack Number : " + (Math.ceil(i / 9)) + "," + "Shelf Number : " + (Math.ceil((i % 9) / 3))) + "," +  "Tablet Number : " + i;
             f=Math.ceil(i/9);
            document.getElementById("demo").innerHTML = n;
             i = i - 1;
@@ -194,6 +196,10 @@ for (var i = 0; i <= medicalstore.medicalDetails.length; i++) {
             //myFunction();
             //document.getElementById("numb").value="";
             present = a;
+            var b=`tab${i+1}`;
+            document.getElementById(b).classList.add("yellow");
+           
+            present2=b;
             return medicalstore.medicalDetails[i];
         }
        else{
@@ -248,14 +254,7 @@ function myFunction() {
     }
 };
 function sample(id){
-    if (present1) {
-      let previous1 = document.getElementById(present1);
-       previous1.classList.remove("yellow");
-       console.log(previous1);
-    }
-    present1=id;
     value1=document.getElementById(id).children[0].innerHTML;
-    document.getElementById(id).classList.add("yellow");
     (document.getElementById("numb")as HTMLFormElement).value="";
     search();
 }
@@ -273,7 +272,7 @@ function sorting1(){
 }
 function previous(){
     if(rackNo===0){
-        alert("No previous rack");
+        alert("Previous rack is not available");
       }
       else{
           rackNo = rackNo-1;
@@ -282,7 +281,7 @@ function previous(){
 }
 function next(){
     if(rackNo>=4){
-        alert("No next rack");
+        alert("Next rack is not available");
       }
       else{
           rackNo = rackNo+1;
@@ -292,3 +291,4 @@ function next(){
 function reload() {
     location.reload();
 }
+myFunction();
