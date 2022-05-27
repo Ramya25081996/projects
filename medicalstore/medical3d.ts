@@ -281,7 +281,7 @@ function previous(){
       }
 }
 function next(){
-    if(rackNo>=5){
+    if(rackNo>=4){
         alert("No next rack");
       }
       else{
