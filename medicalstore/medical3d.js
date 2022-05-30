@@ -158,75 +158,74 @@ var medicalstore = {
             availabletablets: 100
         }]
 };
-var a;
-var n;
-var r;
-var present;
-var f;
+var tabletName;
+var tabletpath;
+var rackMovement;
+var CurrentTablet;
+var findpath;
 var value1;
 var rackNo = 0;
 var tabletDetails;
-var m;
+var CurrentAvailableTablets;
 var saledTablet;
 var present1;
-var present2;
-r = document.querySelector(':root');
+var Current;
+var GenerateTabletId;
+rackMovement = document.querySelector(':root');
 function search() {
-    if (present) {
-        var previousEle = document.getElementById(present);
-        previousEle.classList.remove("green");
-        document.getElementById(present2).classList.remove("yellow");
+    if (CurrentTablet) {
+        var PreviousTabletId = document.getElementById(CurrentTablet);
+        PreviousTabletId.classList.remove("green");
+        document.getElementById(Current).classList.remove("yellow");
     }
-    a = document.getElementById("numb").value || value1;
+    tabletName = document.getElementById("numb").value || value1;
     for (var i = 0; i <= medicalstore.medicalDetails.length; i++) {
-        if (medicalstore.medicalDetails[i].id === a) {
+        if (medicalstore.medicalDetails[i].id === tabletName) {
             i = i + 1;
-            n = ("Rack Number : " + (Math.ceil(i / 9)) + "," + "Shelf Number : " + (Math.ceil((i % 9) / 3))) + "," + "Tablet Number : " + i;
-            f = Math.ceil(i / 9);
-            document.getElementById("demo").innerHTML = n;
+            tabletpath = ("Rack Number : " + (Math.ceil(i / 9)) + "," + "Shelf Number : " + (Math.ceil((i % 9) / 3))) + "Tablet Number : " + i;
+            findpath = Math.ceil(i / 9);
+            document.getElementById("FindTabletPath").innerHTML = tabletpath;
             i = i - 1;
-            rackNo = f - 1;
+            rackNo = findpath - 1;
             document.getElementById(medicalstore.medicalDetails[i].id).classList.add("green");
-            r.style.setProperty('--selectedrack', rackNo);
-            //myFunction();
-            //document.getElementById("numb").value="";
-            present = a;
-            var b = "tab".concat(i + 1);
-            document.getElementById(b).classList.add("yellow");
-            present2 = b;
+            rackMovement.style.setProperty('--selectedrack', rackNo);
+            CurrentTablet = tabletName;
+            GenerateTabletId = "tab".concat(i + 1);
+            document.getElementById(GenerateTabletId).classList.add("yellow");
+            Current = GenerateTabletId;
             return medicalstore.medicalDetails[i];
         }
         else {
-            document.getElementById("demo").innerHTML = "Tablet is not available";
+            document.getElementById("FindTabletPath").innerHTML = "Tablet is not available";
         }
     }
 }
 ;
 function billing() {
     tabletDetails = search();
-    console.log(tabletDetails);
     saledTablet = document.getElementById("numb1").value;
     document.getElementById("s1").classList.add("red");
     if (saledTablet < 0 || saledTablet > 100) {
         document.getElementById("s1").innerHTML = "Invalid input";
     }
     else {
-        if (m <= 0) {
-            document.getElementById("s1").innerHTML = "Error:can not be applied";
+        if (CurrentAvailableTablets <= 0) {
+            document.getElementById("s1").innerHTML = "Error:cannot be applied";
             return;
         }
         tabletDetails.availabletablets = tabletDetails.availabletablets - saledTablet;
-        m = tabletDetails.availabletablets;
-        document.getElementById("s1").innerHTML = m.toString();
-        myFunction();
-        if (m < 30) {
+        CurrentAvailableTablets = tabletDetails.availabletablets;
+        document.getElementById("s1").innerHTML = CurrentAvailableTablets.toString();
+        document.getElementById(GenerateTabletId).children[1].innerHTML = CurrentAvailableTablets.toString();
+        if (CurrentAvailableTablets < 30) {
             document.getElementById(tabletDetails.id).classList.add("red");
+            document.getElementById(GenerateTabletId).classList.add("red");
         }
-        //document.getElementById("numb").value="";
     }
+    document.getElementById("numb1").value = "";
 }
 ;
-function myFunction() {
+function TabletListFormation() {
     document.getElementById("list12").innerHTML = "";
     for (var k = 0; k < medicalstore.medicalDetails.length; k++) {
         var node01 = document.createElement("div");
@@ -254,33 +253,33 @@ function sorting() {
     medicalstore.medicalDetails.sort(function (a, b) {
         return a.availabletablets - b.availabletablets;
     });
-    myFunction();
+    TabletListFormation();
 }
 function sorting1() {
     medicalstore.medicalDetails.sort(function (a, b) {
         return b.availabletablets - a.availabletablets;
     });
-    myFunction();
+    TabletListFormation();
 }
-function previous() {
+function PreviousRack() {
     if (rackNo === 0) {
-        alert("Previous rack is not available");
+        alert("No previous rack");
     }
     else {
         rackNo = rackNo - 1;
-        r.style.setProperty('--selectedrack', rackNo);
+        rackMovement.style.setProperty('--selectedrack', rackNo);
     }
 }
-function next() {
+function NextRack() {
     if (rackNo >= 4) {
-        alert("Next rack is not available");
+        alert("No next rack");
     }
     else {
         rackNo = rackNo + 1;
-        r.style.setProperty('--selectedrack', rackNo);
+        rackMovement.style.setProperty('--selectedrack', rackNo);
     }
 }
 function reload() {
     location.reload();
 }
-myFunction();
+TabletListFormation();

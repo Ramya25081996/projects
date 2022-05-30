@@ -142,13 +142,13 @@ body{
 .facing1{
     position:absolute;
     border-radius:4%;
+    color:white;
 }
 .backcol1 {
     background-color: rgb(0, 0, 255);
 }
 .green div{
     background-color: green;
-    
 }
 .red div{
     background-color: red;
@@ -156,7 +156,7 @@ body{
 }
 @keyframes blinkingBackground{
     0%		{ background-color: red;}
-    25%      { background-color: rgb(129, 3, 3);    }
+    25%      { background-color: rgb(129, 3, 3);}
     50%      { background-color: rgb(255, 23, 23);}
     75%       {background-color:rgb(136, 4, 4);}
     100%	{ background-color:red;}
@@ -255,25 +255,23 @@ body{
     transform: translate3D(50px, 150px, calc((4*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube11,.cube12,.cube13,.cube14,.cube15{
-    transition: 3s;
+    transition: 2s;
 }
 .gridcon{
-    display:grid;
+    
     grid-template-columns:3fr 2fr;
 }
 #myList{
-    display:grid;
+   
     grid-template-rows: auto  1fr;
-/* grid-template-rows:auto; */
     border:1px solid black;  
-    /* background-color: aqua; */
     height:300px;
-     overflow-y: scroll ;
+    overflow-y: scroll ;
 }
 .list11{
-    /* background-color: aqua; */
+   
     display:grid;
-    grid-template-columns:1fr 1fr 0.2fr 0.2fr;
+    grid-template-columns:1.5fr 1fr 0.2fr 0.2fr;
 }
 
 .yellow{
@@ -282,11 +280,11 @@ body{
 #list12{
     display:grid;
     grid-auto-rows:auto;
-   /* background-color: aquamarine; */
+    text-align:center;
 }
 .list01{
     display:grid;
-   grid-template-columns:3fr 1fr;
+   grid-template-columns:1fr 1fr;
    padding-left:3px;
 }
 .widhheight{
@@ -317,7 +315,7 @@ body{
 .border2{
     border-bottom:1px solid black; 
 }
-#demo{
+#FindTabletPath{
     color:blue;
 }
 #s1{

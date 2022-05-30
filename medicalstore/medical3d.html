@@ -13,18 +13,18 @@
         <div class="grid2 justaligncent dispgrid">RR PHARMACY</div>
     <div class="gridcon dispgrid">
     <div class="grid3 dispgrid">
-        <div class="dispflex padding zindex7 justaligncent"><button class="prevbtn" onclick="previous()">Previous</button>
-            <button class="prevbtn" onclick="next()">Next</button></div>
+        <div class="dispflex padding zindex7 justaligncent"><button class="prevbtn" onclick="PreviousRack()">Previous</button>
+            <button class="prevbtn" onclick="NextRack()">Next</button></div>
     <div class="view zindex1">
         <div class="cube cube11" id="rack1" >
                 <div class="view1 style01 style01left">
                     <div class="cube1" id="Tablet1">
                         <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet1</div>
                         <div class="facing1 boxback1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize   backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize  backcol1 borderstyle"></div>
+                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
                     </div>
                 </div>
                 <div class="view1 style1 style01left">
@@ -525,18 +525,18 @@
         <div class="widhheight textalign"><h3>Product Search</h3><br>
             <div class="dispflex justaligncent gap1">
                 <div class="bordercol dispflex"><span class="material-icons-outlined">search</span><input id="numb" value="Tablet" class="bordercol1"></div>
-                <button type="button" onclick="search()">Search</button><button type="button" onclick="reload()">Refresh</button><button onclick="myFunction()">Medical List</button></div>
+                <button type="button" onclick="search()">Search</button><button type="button" onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical List</button></div>
            
             <span>Tablet's Name(Tablet1 to Tablet45)</span>
-            <p id="demo"></p>
-            <p id="demo1"></p>
+            <p id="FindTabletPath"></p>
+        
         </div>
         <div class="widhheight"><h3 class="textalign">Billing</h3>
             <div class="padding"><input id="numb1" value="0"><button type="button" onclick="billing()">submit</button>
             <p>Availabletablets:<span id="s1"></span></p>
         </div>
         </div>
-        <div id="myList">
+        <div id="myList" class="dispgrid">
             <div class="list11">
                 <div class="dispflex justaligncent bordercolor">TabletName</div>
                 <div class="dispflex justaligncent bordercolor">Quantity</div>
