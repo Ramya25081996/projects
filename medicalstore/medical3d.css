@@ -26,7 +26,7 @@ body{
     z-index: 7;
 }
 .padding{
-    padding:40px;
+    padding:24px;
     gap:75px;
 }
 .prevbtn{
@@ -259,7 +259,7 @@ body{
     transform: translate3D(80px, 150px, calc((4*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube11,.cube12,.cube13,.cube14,.cube15{
-    transition: 3s;
+    transition: 2s;
 }
 .gridcon{
     grid-template-columns:2.5fr 2.5fr;
@@ -285,11 +285,12 @@ body{
     text-align:center;
 }
 .list01{
-    display:grid;
+   display:grid;
    grid-template-columns:1fr 1fr;
    padding-left:3px;
 }
 .amount1{
+    display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
 }
 .widhheight{
@@ -305,7 +306,7 @@ body{
 }
 .bordercol{
     border: 1px solid #bcaeae;
-    padding:5px;
+    padding:4px;
 }
 .bordercolor{
     background-color: #f3f3f4;
@@ -352,12 +353,19 @@ body{
     width: 447px;
     height: 338px;
     border: 1px solid #bcaeae;
+    padding: 5px;
 }
 .grid7{
     grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
 }
-.grid8{
-    grid-auto-rows:auto;
+#BillingAmount{
+    display:grid;
+    grid-auto-rows: 20px;
+    text-align: center;
+}
+.capacitynumcol{
+    color:red;
 }
 .billing{
     text-align: center;
@@ -370,7 +378,15 @@ body{
 }
 .bordertop{
     border-top: 1px solid #bcaeae;
+    text-align: end;
+    padding-right: 42px;
 }
 .headerboxshadow{
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+#s2{
+    color:red;
+}
+.borderradius{
+    border-radius: 10px;
 }

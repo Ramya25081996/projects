@@ -537,7 +537,7 @@
                     <div class="widhheight textalign">
                         <h3 class="boxheadingcolor">Product Search</h3><br>
                         <div class="dispflex justaligncent gap1">
-                            <div class="bordercol dispflex"><span class="material-icons-outlined">search</span><input
+                            <div class="bordercol dispflex borderradius"><span class="material-icons-outlined">search</span><input
                                     id="numb" value="Tablet" class="bordercol1"></div>
                             <button type="button" onclick="search()">Search</button><button type="button"
                                 onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical
@@ -550,22 +550,24 @@
                     </div>
                     <div class="widhheight">
                         <h3 class="textalign boxheadingcolor">Billing</h3>
-                        <div class="padding"><input id="numb1" value="0"><button type="button"
-                                onclick="billing()">submit</button>
-                            <p>Availabletablets:<span id="s1"></span></p>
+                        
+                        <div class="padding"><span>Quantity : </span><input id="numb1" value="0"><button type="button" onclick="billing()">submit</button>
+                            <p>Total Capacity : <span class="capacitynumcol">100</span></p>
+                            <p>Available Tablets : <span id="s1"></span></p>
+                            <p>Saled Tablet : <span id="s2"></span></p>
                         </div>
                     </div>
                     <div class="grid6 dispgrid">
                         <div class="billing boxheadingcolor">Cash Bill</div>
-                        <div class="bordbot">BillNo : Med01</div>
+                        <div class="bordbot">BillNo : RRTAB01</div>
                         <div class="grid7 dispgrid bordbot">
                             <div>Particulars</div>
-                            <div>QTY</div>
+                            <div>Quantity</div>
                             <div>Rate</div>
                             <div>Amount</div>
                         </div>
-                        <div class="grid8 dispgrid" id="BillingAmount"></div>
-                        <div class="bordertop">Total Amount : </div>
+                        <div id="BillingAmount"></div>
+                        <div class="bordertop">Total Amount : <span id="billerAmount"></span></div>
                     </div>
                 </div>
                 <div class="paddingforlist zindex">
@@ -587,5 +589,4 @@
     </div>
     <script src="./medical3d.js"></script>
 </body>
-
 </html>

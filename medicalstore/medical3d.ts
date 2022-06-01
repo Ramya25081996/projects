@@ -1,6 +1,7 @@
 type medicalDetails = {
     id: string;
     availabletablets: number;
+    price:number;
 }
 var medicalstore = {
     medicaldetails: {
@@ -9,157 +10,185 @@ var medicalstore = {
     },
     medicalDetails: [{
         id: "Tablet1",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet2",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet3",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
+
     }, {
         id: "Tablet4",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet5",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet6",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet7",
-        availabletablets: 100
+        availabletablets: 100,
+        price:2
     }, {
         id: "Tablet8",
-        availabletablets: 100
+        availabletablets: 100,
+        price:4
     }, {
         id: "Tablet9",
-        availabletablets: 100
+        availabletablets: 100,
+        price:4
     }, {
         id: "Tablet10",
-        availabletablets: 100
+        availabletablets: 100,
+        price:4
     }, {
         id: "Tablet11",
-        availabletablets: 100
+        availabletablets: 100,
+        price:4
     }, {
         id: "Tablet12",
         availabletablets: 100,
-        rackid: "rack1"
+        price:4
     }, {
         id: "Tablet13",
         availabletablets: 100,
-        rackid: "rack1"
+        price:4
     }, {
         id: "Tablet14",
         availabletablets: 100,
-        rackid: "rack1"
+        price:4
     }, {
         id: "Tablet15",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet16",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet17",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet18",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet19",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet20",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet21",
         availabletablets: 100,
-        rackid: "rack1"
+        price:6
     }, {
         id: "Tablet22",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
-        id: "tablet23",
+        id: "Tablet23",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet24",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet25",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet26",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet27",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet28",
         availabletablets: 100,
-        rackid: "rack1"
+        price:8
     }, {
         id: "Tablet29",
         availabletablets: 100,
-        rackid: "rack1"
+        price:10
     }, {
         id: "Tablet30",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet31",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet32",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet33",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet34",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet35",
-        availabletablets: 100
+        availabletablets: 100,
+        price:10
     }, {
         id: "Tablet36",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet37",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet38",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet39",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet40",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet41",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet42",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet43",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet44",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }, {
         id: "Tablet45",
-        availabletablets: 100
+        availabletablets: 100,
+        price:12
     }]
 };
 var tabletName: string;
@@ -225,6 +254,7 @@ function billing() {
             document.getElementById(GenerateTabletId).classList.add("red");
         }
     }
+    cashbilling();
     (document.getElementById("numb1") as HTMLFormElement).value = "";
 };
 
@@ -245,6 +275,33 @@ function TabletListFormation() {
         node01.appendChild(node1);
         document.getElementById("list12").appendChild(node01);
     }
+};
+var biller=[];
+var TotalAmount;
+function cashbilling(){
+    var billing1=document.createElement("div");
+    billing1.className="amount1";
+    var bill1=document.createElement("div");
+    var cash1=document.createTextNode(tabletName);
+    var bill2=document.createElement("div");
+    var cash2=document.createTextNode(saledTablet.toString());
+    var bill3=document.createElement("div");
+    var cash3=document.createTextNode(tabletDetails.price.toString());
+    var bill4=document.createElement("div");
+    var biller1:number=(tabletDetails.price)*saledTablet;
+    var cash4=document.createTextNode(biller1.toString());
+    biller.push(biller1);
+    TotalAmount=biller.reduce((x,y)=>x+y);
+    bill1.appendChild(cash1);
+    bill2.appendChild(cash2);
+    bill3.appendChild(cash3);
+    bill4.appendChild(cash4);
+    billing1.appendChild(bill1);
+    billing1.appendChild(bill2);
+    billing1.appendChild(bill3);
+    billing1.appendChild(bill4);
+    document.getElementById("BillingAmount").appendChild(billing1);
+    document.getElementById("billerAmount").innerText = TotalAmount;
 };
 function sample(id) {
     value1 = document.getElementById(id).children[0].innerHTML;
