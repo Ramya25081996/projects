@@ -8,7 +8,7 @@
     --selectedrack:0;
 }
 body{
-    width:98vw;
+    width:100vw;
     height:100vh;
 } 
 .flex{
@@ -42,14 +42,18 @@ body{
     align-items: center;
     justify-content: center;
 }
+.justaligncent1{
+    align-items: end;
+    justify-content: end;
+}
 .gap1{
     gap:10px;
 }
 .grid2{
     background-color:#f3f3f4;
     font-size: 20px;
-    padding: 20px;
-    border: 1px solid #bcaeae;
+    padding: 15px;
+    border-bottom: 1px solid #bcaeae;
 }
 .flex2{
     flex-direction: column;
@@ -57,10 +61,11 @@ body{
     padding: 10px
 }
 .grid3{
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr  auto;
 }
 .view{
     position:absolute;
+    top: 0%;
     width:1500px;
     height:600px;
     perspective: 1000px;
@@ -69,7 +74,7 @@ body{
     border:1px solid black;
 }
 .backcol{
-    background-color: #bdbdbd;
+    background-color:#dcdce2;
 }
 .cube{
     width:100%;
@@ -114,13 +119,13 @@ body{
     height:426px
 }
 .self1{
-    background-color:white;
+    background-color: #9e9e9e;
     transform:rotateX(90deg) translateZ(-81px);
     width:380px;
     height:100px
 }
 .self2{
-    background-color:white;
+    background-color: #9e9e9e;
     transform:rotateX(90deg) translateZ(-222px);
     width:380px;
     height:100px
@@ -142,10 +147,10 @@ body{
 .facing1{
     position:absolute;
     border-radius:4%;
-    color:white;
+    color:black;
 }
 .backcol1 {
-    background-color: rgb(0, 0, 255);
+    background-color: #0fd5ce;
 }
 .green div{
     background-color: green;
@@ -238,39 +243,36 @@ body{
 .zindex5{
     z-index:1;
 }
-
 .cube11{
-    transform: translate3D(50px, 150px,calc((0*var(--diffspace)*(-1px)) + (var(--selectedrack)*var(--diffspace)*(1px))));
+    transform: translate3D(80px, 150px,calc((0*var(--diffspace)*(-1px)) + (var(--selectedrack)*var(--diffspace)*(1px))));
 }
 .cube12{
-    transform: translate3D(50px, 150px, calc((1*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
+    transform: translate3D(80px, 150px, calc((1*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube13{
-    transform: translate3D(50px, 150px, calc((2*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
+    transform: translate3D(80px, 150px, calc((2*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube14{
-    transform: translate3D(50px, 150px, calc((3*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
+    transform: translate3D(80px, 150px, calc((3*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube15{
-    transform: translate3D(50px, 150px, calc((4*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
+    transform: translate3D(80px, 150px, calc((4*var(--diffspace)*(-1px) + (var(--selectedrack)*var(--diffspace)*(1px)))));
 }
 .cube11,.cube12,.cube13,.cube14,.cube15{
-    transition: 2s;
+    transition: 3s;
 }
 .gridcon{
-    
-    grid-template-columns:3fr 2fr;
+    grid-template-columns:2.5fr 2.5fr;
 }
 #myList{
-   
     grid-template-rows: auto  1fr;
     border:1px solid black;  
-    height:300px;
+    height: 653px;
+    width: 409px;
     overflow-y: scroll ;
 }
 .list11{
-   
-    display:grid;
+   display:grid;
     grid-template-columns:1.5fr 1fr 0.2fr 0.2fr;
 }
 
@@ -287,11 +289,16 @@ body{
    grid-template-columns:1fr 1fr;
    padding-left:3px;
 }
+.amount1{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
 .widhheight{
-    width:611px;
+    width:447px;
     height:138px;
     border:1px solid #bcaeae;
-    background-color: #f3f3f4;
+}
+.boxheadingcolor{
+    background-color:#f3f3f4
 }
 .bordercol1{
     border: none;
@@ -320,4 +327,50 @@ body{
 }
 #s1{
     color:red;
+}
+#logoposition::before{
+    background-image: url('./pharmacy1.png');
+    background-size: 43px 24px;
+    width: 44px; 
+    height: 24px;
+    content:"";
+}
+.colo{
+    color:white !important;
+}
+.justspace{
+    justify-content: space-between;
+}
+.grid5{
+    grid-template-columns:1fr 1fr;
+}
+.paddingforlist{
+    padding:10px
+}
+.grid6{
+    grid-template-rows:auto auto auto 1fr auto;
+    width: 447px;
+    height: 338px;
+    border: 1px solid #bcaeae;
+}
+.grid7{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.grid8{
+    grid-auto-rows:auto;
+}
+.billing{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #bcaeae;
+    font-weight: bold;
+}
+.bordbot{
+    border-bottom: 1px solid #bcaeae;
+}
+.bordertop{
+    border-top: 1px solid #bcaeae;
+}
+.headerboxshadow{
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }

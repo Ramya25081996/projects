@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,547 +9,583 @@
     <link rel="stylesheet" href="./medical3d.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 </head>
+
 <body>
     <div class="grid1 dispgrid">
-        <div class="grid2 justaligncent dispgrid">RR PHARMACY</div>
-    <div class="gridcon dispgrid">
-    <div class="grid3 dispgrid">
-        <div class="dispflex padding zindex7 justaligncent"><button class="prevbtn" onclick="PreviousRack()">Previous</button>
-            <button class="prevbtn" onclick="NextRack()">Next</button></div>
-    <div class="view zindex1">
-        <div class="cube cube11" id="rack1" >
-                <div class="view1 style01 style01left">
-                    <div class="cube1" id="Tablet1">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet1</div>
-                        <div class="facing1 boxback1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style1 style01left">
-                    <div class="cube1" id="Tablet2">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet2</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style2 style01left">
-                    <div class="cube1" id="Tablet3">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet3</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style3 style02left">
-                    <div class="cube1" id="Tablet4">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet4</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize  backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style4 style02left">
-                    <div class="cube1" id="Tablet5">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet5</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style5 style02left">
-                    <div class="cube1" id="Tablet6">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet6</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style6">
-                    <div class="cube1" id="Tablet7"> 
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet7</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style7">
-                    <div class="cube1" id="Tablet8">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet8</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1  boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style8">
-                    <div class="cube1" id="Tablet9">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet9</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-            <div class="facing self1 opself backcol borderstyle"></div>
-            <div class="facing self2 opself backcol borderstyle"></div>
-            <div class="facing boxback backcol borderstyle"></div>
-            <div class="facing boxtop backcol borderstyle"></div>
-            <div class="facing boxbottom backcol borderstyle"></div>
-            <div class="facing boxright backcol borderstyle"></div>
-            <div class="facing boxleft backcol borderstyle"></div>
-        </div>
-    </div>
-    <div class="view zindex2">
-        <div class="cube cube12" id="rack2">
-                <div class="view1 style01 style01left">
-                    <div class="cube1" id="Tablet10">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet10</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1  boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style1 style01left">
-                    <div class="cube1" id="Tablet11">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet11</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize  backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style2 style01left">
-                    <div class="cube1" id="Tablet12">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet12</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style3 style02left">
-                    <div class="cube1" id="Tablet13">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet13</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize  backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style4 style02left">
-                    <div class="cube1" id="Tablet14">
-                        <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet14</div>
-                        <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
-                        <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style5 style02left">
-                    <div class="cube1" id="Tablet15">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet15</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style6">
-                    <div class="cube1" id="Tablet16">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet16</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style7">
-                    <div class="cube1" id="Tablet17">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet17</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style8">
-                    <div class="cube1" id="Tablet18">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet18</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-            <div class="facing self1 opself backcol borderstyle"></div>
-            <div class="facing self2 opself backcol borderstyle"></div>
-            <div class="facing boxback backcol borderstyle"></div>
-            <div class="facing boxtop backcol borderstyle"></div>
-            <div class="facing boxbottom backcol borderstyle"></div>
-            <div class="facing boxright backcol borderstyle"></div>
-            <div class="facing boxleft backcol borderstyle"></div>
-        </div>
-    </div>
-    <div class="view zindex3">
-        <div class="cube cube13" id="rack3">
-                <div class="view1 style01 style01left">
-                    <div class="cube1" id="Tablet19">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet19</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style1 style01left">
-                    <div class="cube1" id="Tablet20">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet20</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style2 style01left">
-                    <div class="cube1" id="Tablet21">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet21</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style3 style02left">
-                    <div class="cube1" id="Tablet22">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet22</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1  backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style4 style02left">
-                    <div class="cube1" id="Tablet23">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet23</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style5 style02left">
-                    <div class="cube1" id="Tablet24">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet24</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1  boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style6">
-                    <div class="cube1" id="Tablet25">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet25</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style7">
-                    <div class="cube1" id="Tablet26">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet26</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style8">
-                    <div class="cube1" id="Tablet27">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet27</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-            <div class="facing self1 opself backcol borderstyle"></div>
-            <div class="facing self2 opself backcol borderstyle"></div>
-            <div class="facing boxback backcol borderstyle"></div>
-            <div class="facing boxtop backcol borderstyle"></div>
-            <div class="facing boxbottom backcol borderstyle"></div>
-            <div class="facing boxright backcol borderstyle"></div>
-            <div class="facing boxleft backcol borderstyle"></div>
-        </div>
-    </div>
-    <div class="view zindex4">
-        <div class="cube cube14" id="rack4">
-                <div class="view1 style01 style01left">
-                    <div class="cube1" id="Tablet28">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet28</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style1 style01left">
-                    <div class="cube1" id="Tablet29">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet29</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style2 style01left">
-                    <div class="cube1" id="Tablet30">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet30</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style3 style02left">
-                    <div class="cube1" id="Tablet31">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablte31</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1  boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1  boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1  boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1  backcol1  boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style4 style02left">
-                    <div class="cube1" id="Tablet32">
-                        <div class="facing1 boxfront1 backcol1  boxsize borderstyle flex">Tablet32</div>
-                        <div class="facing1 boxback1 backcol1  boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1  boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style5 style02left">
-                    <div class="cube1" id="Tablet33">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet33</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style6">
-                    <div class="cube1" id="Tablet34">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet34</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style7">
-                    <div class="cube1" id="Tablet35">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet35</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style8">
-                    <div class="cube1" id="Tablet36">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet36</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-            <div class="facing self1 opself backcol borderstyle"></div>
-            <div class="facing self2 opself backcol borderstyle"></div>
-            <div class="facing boxback backcol borderstyle"></div>
-            <div class="facing boxtop backcol borderstyle"></div>
-            <div class="facing boxbottom backcol borderstyle"></div>
-            <div class="facing boxright backcol borderstyle"></div>
-            <div class="facing boxleft backcol borderstyle"></div>
-        </div>
-    </div>
-    <div class="view zindex5">
-        <div class="cube cube15" id="rack5">
-                <div class="view1 style01 style01left">
-                    <div class="cube1" id="Tablet37">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet37</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style1 style01left">
-                    <div class="cube1" id="Tablet38">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet38</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style2 style01left">
-                    <div class="cube1" id="Tablet39">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet39</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style3 style02left">
-                    <div class="cube1" id="Tablet40">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet40</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1  backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style4 style02left">
-                    <div class="cube1" id="Tablet41">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet41</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style5 style02left">
-                    <div class="cube1" id="Tablet42">
-                        <div class="facing1 boxfront1 backcol1  boxsize borderstyle flex">Tablet42</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style6">
-                    <div class="cube1" id="Tablet43">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet43</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style7">
-                    <div class="cube1" id="Tablet44">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet44</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-                <div class="view1 style8">
-                    <div class="cube1" id="Tablet45">
-                        <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet45</div>
-                        <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
-                        <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
-                    </div>
-                </div>
-            <div class="facing self1 opself backcol borderstyle"></div>
-            <div class="facing self2 opself backcol borderstyle"></div>
-            <div class="facing boxback backcol borderstyle"></div>
-            <div class="facing boxtop backcol borderstyle"></div>
-            <div class="facing boxbottom backcol borderstyle"></div>
-            <div class="facing boxright backcol borderstyle"></div>
-            <div class="facing boxleft backcol borderstyle"></div>
-        </div>
-    </div>
-    </div>
-    <div class="zindex dispflex flex2">
-        <div class="widhheight textalign"><h3>Product Search</h3><br>
-            <div class="dispflex justaligncent gap1">
-                <div class="bordercol dispflex"><span class="material-icons-outlined">search</span><input id="numb" value="Tablet" class="bordercol1"></div>
-                <button type="button" onclick="search()">Search</button><button type="button" onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical List</button></div>
-           
-            <span>Tablet's Name(Tablet1 to Tablet45)</span>
-            <p id="FindTabletPath"></p>
-        
-        </div>
-        <div class="widhheight"><h3 class="textalign">Billing</h3>
-            <div class="padding"><input id="numb1" value="0"><button type="button" onclick="billing()">submit</button>
-            <p>Availabletablets:<span id="s1"></span></p>
-        </div>
-        </div>
-        <div id="myList" class="dispgrid">
-            <div class="list11">
-                <div class="dispflex justaligncent bordercolor">TabletName</div>
-                <div class="dispflex justaligncent bordercolor">Quantity</div>
-                <button onclick="sorting()" class="bordercol1"><span class="material-icons-outlined">arrow_downward</span>
-                </button>
-                <button onclick="sorting1()" class="bordercol1"><span class="material-icons-outlined">arrow_upward</span></button>
+        <div class="grid2 dispgrid dispflex headerboxshadow">
+            <div class="dispflex justspace">
+                <div id="logoposition" class="dispflex">RR PHARMACY</div>
+                <div>Welcome to RP Pharmacy!!</div>
             </div>
-            <div id="list12"></div>
+        </div>
+        <div class="gridcon dispgrid">
+            <div class="grid3 dispgrid">
+                <div>
+                    <div class="view zindex1">
+                        <div class="cube cube11" id="rack1">
+                            <div class="view1 style01 style01left">
+                                <div class="cube1" id="Tablet1">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet1</div>
+                                    <div class="facing1 boxback1 boxsize  backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style1 style01left">
+                                <div class="cube1" id="Tablet2">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet2</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize  backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style2 style01left">
+                                <div class="cube1" id="Tablet3">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet3</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style3 style02left">
+                                <div class="cube1" id="Tablet4">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet4</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize  backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style4 style02left">
+                                <div class="cube1" id="Tablet5">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet5</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style5 style02left">
+                                <div class="cube1" id="Tablet6">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet6</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style6">
+                                <div class="cube1" id="Tablet7">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet7</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style7">
+                                <div class="cube1" id="Tablet8">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet8</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1  boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style8">
+                                <div class="cube1" id="Tablet9">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet9</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="facing self1 opself backcol borderstyle"></div>
+                            <div class="facing self2 opself backcol borderstyle"></div>
+                            <div class="facing boxback backcol borderstyle"></div>
+                            <div class="facing boxtop backcol borderstyle"></div>
+                            <div class="facing boxbottom backcol borderstyle"></div>
+                            <div class="facing boxright backcol borderstyle"></div>
+                            <div class="facing boxleft backcol borderstyle"></div>
+                        </div>
+                    </div>
+                    <div class="view zindex2">
+                        <div class="cube cube12" id="rack2">
+                            <div class="view1 style01 style01left">
+                                <div class="cube1" id="Tablet10">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet10</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1  boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style1 style01left">
+                                <div class="cube1" id="Tablet11">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet11</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize  backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style2 style01left">
+                                <div class="cube1" id="Tablet12">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet12</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style3 style02left">
+                                <div class="cube1" id="Tablet13">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet13</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize  backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style4 style02left">
+                                <div class="cube1" id="Tablet14">
+                                    <div class="facing1 boxfront1 boxsize backcol1 borderstyle flex">Tablet14</div>
+                                    <div class="facing1 boxback1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxtop1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxbottom1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxright1 boxsize backcol1 borderstyle"></div>
+                                    <div class="facing1 boxleft1 boxsize backcol1 borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style5 style02left">
+                                <div class="cube1" id="Tablet15">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet15</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style6">
+                                <div class="cube1" id="Tablet16">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet16</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style7">
+                                <div class="cube1" id="Tablet17">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet17</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style8">
+                                <div class="cube1" id="Tablet18">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet18</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="facing self1 opself backcol borderstyle"></div>
+                            <div class="facing self2 opself backcol borderstyle"></div>
+                            <div class="facing boxback backcol borderstyle"></div>
+                            <div class="facing boxtop backcol borderstyle"></div>
+                            <div class="facing boxbottom backcol borderstyle"></div>
+                            <div class="facing boxright backcol borderstyle"></div>
+                            <div class="facing boxleft backcol borderstyle"></div>
+                        </div>
+                    </div>
+                    <div class="view zindex3">
+                        <div class="cube cube13" id="rack3">
+                            <div class="view1 style01 style01left">
+                                <div class="cube1" id="Tablet19">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet19</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style1 style01left">
+                                <div class="cube1" id="Tablet20">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet20</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style2 style01left">
+                                <div class="cube1" id="Tablet21">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet21</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style3 style02left">
+                                <div class="cube1" id="Tablet22">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet22</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1  backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style4 style02left">
+                                <div class="cube1" id="Tablet23">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet23</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style5 style02left">
+                                <div class="cube1" id="Tablet24">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet24</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1  boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style6">
+                                <div class="cube1" id="Tablet25">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet25</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style7">
+                                <div class="cube1" id="Tablet26">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet26</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style8">
+                                <div class="cube1" id="Tablet27">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet27</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="facing self1 opself backcol borderstyle"></div>
+                            <div class="facing self2 opself backcol borderstyle"></div>
+                            <div class="facing boxback backcol borderstyle"></div>
+                            <div class="facing boxtop backcol borderstyle"></div>
+                            <div class="facing boxbottom backcol borderstyle"></div>
+                            <div class="facing boxright backcol borderstyle"></div>
+                            <div class="facing boxleft backcol borderstyle"></div>
+                        </div>
+                    </div>
+                    <div class="view zindex4">
+                        <div class="cube cube14" id="rack4">
+                            <div class="view1 style01 style01left">
+                                <div class="cube1" id="Tablet28">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet28</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style1 style01left">
+                                <div class="cube1" id="Tablet29">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet29</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style2 style01left">
+                                <div class="cube1" id="Tablet30">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet30</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style3 style02left">
+                                <div class="cube1" id="Tablet31">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablte31</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1  boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1  boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1  boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1  backcol1  boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style4 style02left">
+                                <div class="cube1" id="Tablet32">
+                                    <div class="facing1 boxfront1 backcol1  boxsize borderstyle flex">Tablet32</div>
+                                    <div class="facing1 boxback1 backcol1  boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1  boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style5 style02left">
+                                <div class="cube1" id="Tablet33">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet33</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style6">
+                                <div class="cube1" id="Tablet34">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet34</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style7">
+                                <div class="cube1" id="Tablet35">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet35</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style8">
+                                <div class="cube1" id="Tablet36">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet36</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="facing self1 opself backcol borderstyle"></div>
+                            <div class="facing self2 opself backcol borderstyle"></div>
+                            <div class="facing boxback backcol borderstyle"></div>
+                            <div class="facing boxtop backcol borderstyle"></div>
+                            <div class="facing boxbottom backcol borderstyle"></div>
+                            <div class="facing boxright backcol borderstyle"></div>
+                            <div class="facing boxleft backcol borderstyle"></div>
+                        </div>
+                    </div>
+                    <div class="view zindex5">
+                        <div class="cube cube15" id="rack5">
+                            <div class="view1 style01 style01left">
+                                <div class="cube1" id="Tablet37">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet37</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style1 style01left">
+                                <div class="cube1" id="Tablet38">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet38</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1  backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style2 style01left">
+                                <div class="cube1" id="Tablet39">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet39</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style3 style02left">
+                                <div class="cube1" id="Tablet40">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet40</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1  backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style4 style02left">
+                                <div class="cube1" id="Tablet41">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet41</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style5 style02left">
+                                <div class="cube1" id="Tablet42">
+                                    <div class="facing1 boxfront1 backcol1  boxsize borderstyle flex">Tablet42</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style6">
+                                <div class="cube1" id="Tablet43">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet43</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style7">
+                                <div class="cube1" id="Tablet44">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet44</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="view1 style8">
+                                <div class="cube1" id="Tablet45">
+                                    <div class="facing1 boxfront1 backcol1 boxsize borderstyle flex">Tablet45</div>
+                                    <div class="facing1 boxback1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxtop1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxbottom1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxright1 backcol1 boxsize borderstyle"></div>
+                                    <div class="facing1 boxleft1 backcol1 boxsize borderstyle"></div>
+                                </div>
+                            </div>
+                            <div class="facing self1 opself backcol borderstyle"></div>
+                            <div class="facing self2 opself backcol borderstyle"></div>
+                            <div class="facing boxback backcol borderstyle"></div>
+                            <div class="facing boxtop backcol borderstyle"></div>
+                            <div class="facing boxbottom backcol borderstyle"></div>
+                            <div class="facing boxright backcol borderstyle"></div>
+                            <div class="facing boxleft backcol borderstyle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dispflex padding zindex7 justaligncent1"><button class="prevbtn"
+                        onclick="PreviousRack()">Previous Rack</button>
+                    <button class="prevbtn" onclick="NextRack()">Next Rack</button>
+                </div>
+            </div>
+            <div class="grid5 dispgrid">
+                <div class="zindex dispflex flex2">
+                    <div class="widhheight textalign">
+                        <h3 class="boxheadingcolor">Product Search</h3><br>
+                        <div class="dispflex justaligncent gap1">
+                            <div class="bordercol dispflex"><span class="material-icons-outlined">search</span><input
+                                    id="numb" value="Tablet" class="bordercol1"></div>
+                            <button type="button" onclick="search()">Search</button><button type="button"
+                                onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical
+                                List</button>
+                        </div>
+
+                        <span>Tablet's Name(Tablet1 to Tablet45)</span>
+                        <p id="FindTabletPath"></p>
+
+                    </div>
+                    <div class="widhheight">
+                        <h3 class="textalign boxheadingcolor">Billing</h3>
+                        <div class="padding"><input id="numb1" value="0"><button type="button"
+                                onclick="billing()">submit</button>
+                            <p>Availabletablets:<span id="s1"></span></p>
+                        </div>
+                    </div>
+                    <div class="grid6 dispgrid">
+                        <div class="billing boxheadingcolor">Cash Bill</div>
+                        <div class="bordbot">BillNo : Med01</div>
+                        <div class="grid7 dispgrid bordbot">
+                            <div>Particulars</div>
+                            <div>QTY</div>
+                            <div>Rate</div>
+                            <div>Amount</div>
+                        </div>
+                        <div class="grid8 dispgrid" id="BillingAmount"></div>
+                        <div class="bordertop">Total Amount : </div>
+                    </div>
+                </div>
+                <div class="paddingforlist zindex">
+                    <div id="myList" class="dispgrid">
+                        <div class="list11">
+                            <div class="dispflex justaligncent bordercolor">TabletName</div>
+                            <div class="dispflex justaligncent bordercolor">Quantity</div>
+                            <button onclick="sorting()" class="bordercol1"><span
+                                    class="material-icons-outlined">arrow_downward</span>
+                            </button>
+                            <button onclick="sorting1()" class="bordercol1"><span
+                                    class="material-icons-outlined">arrow_upward</span></button>
+                        </div>
+                        <div id="list12"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
-<script src="./medical3d.js"></script>
+    <script src="./medical3d.js"></script>
 </body>
+
 </html>
