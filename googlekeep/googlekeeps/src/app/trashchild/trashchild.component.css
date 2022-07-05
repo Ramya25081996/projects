@@ -1,0 +1,24 @@
+.deleted-element-style{
+    width: 100%;
+    /* height: 100%; */
+    /* margin: 13px; */
+    padding: 10px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.delete-item-align{
+    border: 1px solid #e0e0e0;
+    /* height: 100px; */
+    padding: 40px;
+    width: 670px;
+   
+    border-radius: 10px 10px 10px 10px;
+}
+.delete-item-align:hover{
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+}
+.text-align{
+    text-align: end;
+}

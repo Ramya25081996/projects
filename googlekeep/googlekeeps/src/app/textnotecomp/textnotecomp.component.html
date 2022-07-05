@@ -1,0 +1,10 @@
+<div class="text-note-align">
+<div class="border1" routerLink="pages" (click)="$event.stopPropagation()">
+    <div contenteditable="true">{{list1.title}}</div>
+    <div contenteditable="true">{{list1.textNote}}</div>
+    <input type="checkbox">{{list1.list}}
+    
+    <div class="text-align"><button (click)="removeelement(indexvalue)">delete</button><div>{{dateValue | date:'short'}}</div></div>
+</div>
+</div>
+

@@ -1,0 +1,16 @@
+<div class="container1" (click)="getvalue()">
+    <div class="container" (click)="$event.stopPropagation()">
+        <div class="notes-creater-align">
+            <input type="text" class="input-align" placeholder="Title" value="" *ngIf="this.element.noteshighlight"
+                #inputvalue0>
+            <div contenteditable="true" class="text-style" data-text="Take a note..."
+                (focus)="this.element.noteshighlight = true" #inputvalue>
+            </div>
+            <div class="list-align"*ngIf="this.element.noteshighlight"><span class="material-icons-outlined">add</span>
+            <input type="text"  placeholder="List" #inputvalue1 class="input-align"></div>
+            <div class="close-button-align"><button *ngIf="this.element.noteshighlight"
+                    (click)="gettextvalue()">close</button></div>
+        </div>
+    </div>
+    <app-textnotecomp *ngFor="let x of this.element.selectedvalue;index as i" [list1]="x" [indexvalue]="i">
+    </app-textnotecomp>

@@ -1,0 +1,35 @@
+.edit-labels-style{
+    border:1px solid black;
+    height:auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.edit-labels-align{
+    position:absolute; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.1);
+    pointer-events: auto;
+}
+.delete-input-done-align{
+    display:flex;
+    gap:10px;
+}
+.bottom-line{
+    border-bottom:1px solid black;
+}
+.edit-label-padding{
+    padding:20px;
+}
+.done-text-align{
+    text-align:end;
+}
+.dispflex{
+    display:flex;
+}

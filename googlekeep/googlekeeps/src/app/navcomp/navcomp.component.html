@@ -1,0 +1,25 @@
+<div class="nav-comp-fontsize"[ngClass]="{'padding':this.element.menuIconHighlight==false}">
+<a routerLink="keeps" class="navcomp-style" routerLinkActive="active" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'">
+    <div><span class="material-icons-outlined">lightbulb</span></div>
+    <div *ngIf="this.element.menuIconHighlight" class="nav-comp" (click)="textcontent($event)">Notes</div>
+</a>
+<a routerLink="remainder" class="navcomp-style" routerLinkActive="active" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'">
+    <div><span class="material-icons-outlined">notifications</span></div>
+    <div *ngIf="this.element.menuIconHighlight" class="nav-comp" (click)="textcontent($event)">Remainder</div>
+</a>
+<a class="navcomp-style" routerLink="labels/{{editvalue.c}}" routerLinkActive="active" *ngFor="let editvalue of element.keepNotesValue.editLabelArray" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'">
+    <div class="span"><span class="material-icons-outlined">new_label</span></div>
+    <div class="nav-comp" *ngIf="this.element.menuIconHighlight" (click)="textcontent($event)" >{{editvalue.c}}</div>
+</a>
+<div class="navcomp-style comp" (click)="editlabilsbutton()" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'"><div><span class="material-symbols-outlined">edit</span></div><div *ngIf="this.element.menuIconHighlight" class="nav-comp" (click)="textcontent($event)">Edit labels</div></div>
+<div *ngIf="this.element.editlabelsshow"><app-editlabels></app-editlabels></div>
+<a routerLink="archive" class="navcomp-style" routerLinkActive="active" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'">
+    <div><span class="material-icons-outlined">unarchive</span></div>
+    <div *ngIf="this.element.menuIconHighlight" class="nav-comp" (click)="textcontent($event)">Archive</div>
+</a>
+<a routerLink="trash"  class="navcomp-style" routerLinkActive="active" [ngClass]="(this.element.menuIconHighlight)?'nav-class':'nav-class1'">
+    <div><span class="material-symbols-outlined">delete</span></div>
+    <div *ngIf="this.element.menuIconHighlight" class="nav-comp" (click)="textcontent($event)">Trash</div>
+</a>
+</div>
+   

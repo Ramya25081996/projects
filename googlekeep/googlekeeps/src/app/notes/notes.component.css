@@ -1,0 +1,51 @@
+.text-style{
+    /* border: 1px solid #000; */
+    white-space: pre-line;
+    /* min-height: 40px;
+    max-height: 500px; */
+    width: 650px;
+    /* border-radius: 10px; */
+    padding:14px;
+   
+}
+.text-style:focus{
+    outline:none;
+}
+.notes-creater-align{
+    /* min-height:40px;
+    max-height: 500px; */
+    height:auto;
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+}
+.input-align{
+    white-space: pre-line;
+    width: 650px;
+    border:none;
+    /* border-radius: 10px; */
+    padding:14px;
+
+}  
+.input-align:focus{
+    outline:none;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+}
+.container1{
+    height:100%;
+}
+.close-button-align{
+    text-align:end;
+}
+.list-align{
+    display:flex;
+    align-items: center;
+}

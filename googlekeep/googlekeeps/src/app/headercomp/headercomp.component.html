@@ -1,0 +1,33 @@
+<div class="alignment-property spacebtwn">
+    
+   <div class="header-style">
+    <div class="header1-style">
+    <div class="icon-align"><span class="material-symbols-outlined" (click)="menuiconclick()">menu</span></div>
+    <div class="keep-img-logo"></div>
+    <div class="text-content-style">{{this.element.takethetextcontent}}</div>
+     </div>
+    <div class="searchbar-alignment" appCustom><span class="material-symbols-outlined search-icon">search</span>
+        <div class="inputclass"><input type="text" placeholder="search" routerLink="search" (keyup)="getSearchElement($event)"></div>
+    </div>
+</div>
+    <div class="header2-style">
+        <div class="icon1-align dispflex">
+    <div><span class="material-symbols-outlined" (click)="reload()">
+        refresh
+        </span></div>
+        <div>
+            <span class="material-icons-outlined">
+                grid_on
+                </span>
+        </div>
+    <div><span class="material-symbols-outlined">
+        settings
+        </span></div></div>
+        <div class="icon2-align dispflex">
+    <div><span class="material-symbols-outlined">
+        apps
+        </span></div>
+    <div class="image-logo-align"></div>
+    </div>
+</div>
+</div>

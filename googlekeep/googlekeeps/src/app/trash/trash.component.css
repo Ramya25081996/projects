@@ -1,0 +1,16 @@
+.trash{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:10px;
+}
+.empty-trash-align{
+   
+    width: 82px;
+    height: 20px;
+}
+.empty-trash-align:hover{
+ background-color: rgb(249, 227, 255);
+}

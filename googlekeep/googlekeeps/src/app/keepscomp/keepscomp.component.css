@@ -1,0 +1,29 @@
+.keep-comp-division{
+    grid-template-rows:60px 1fr ;
+}
+.display-property{
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+}
+.headercomp-align{
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid rgb(182, 181, 181);
+    padding: 13px 10px 13px 20px;
+    width: 100%;
+}
+.navcomp-align{
+    display:flex;
+    background-color: white;
+}
+.width-align{
+    width:100%;
+}
+.main-comp-alignment{
+    display:grid;
+    grid-template-columns: auto 1fr;
+}
+.main-style{
+    background-color: white;
+}

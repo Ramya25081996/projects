@@ -1,0 +1,4 @@
+<div class="trash">
+<h3>Notes in Trash are deleted</h3>
+<div class="empty-trash-align" (click)="emptyTrash()">EmptyTrash</div></div>
+<app-trashchild *ngFor="let x of this.element.deletedvalue;index as trash" [deletedElement]="x" [deleteItems]="trash"></app-trashchild>
