@@ -15,12 +15,18 @@ export class EditlabelsComponent implements OnInit {
   closebutton(){
     this.element.editlabelsshow=!this.element.editlabelsshow;
   }
-  createEditLabels="";
+  createEditLabels!:string;
   @ViewChild('ediptlabelinput') inputValue1!:ElementRef;
   getEditLabelsValue(){
     this.createEditLabels=((this.inputValue1.nativeElement)as HTMLInputElement).value;
-    console.log(this.createEditLabels)
-    this.element.getEditlabelvalue(this.createEditLabels);
-    // console.log(this.createEditLabels);
+    if(this.createEditLabels==""){
+      alert("enter the input");
+    }
+    else{
+       this.element.getEditlabelvalue(this.createEditLabels);
+    }
+}
+deleteEditLabels(index1:any){
+        this.element.keepNotesValue.editLabelArray.splice(index1,1);
 }
 }

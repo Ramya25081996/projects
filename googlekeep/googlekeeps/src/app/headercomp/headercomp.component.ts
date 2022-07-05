@@ -18,7 +18,7 @@ export class HeadercompComponent implements OnInit {
   menuiconclick(){
     this.element.menuIconHighlight=!this.element.menuIconHighlight;
   }
-  searchValue:any;
+  searchValue!:string;
  
   getSearchElement(value1:any){
      this.searchValue=value1.target.value;

@@ -1,14 +1,19 @@
-<div class="edit-labels-align" (click)="closebutton()" *ngIf="this.element.editlabelsshow"> 
-<div class="edit-labels-style" (click)="$event.stopPropagation()">
-    <div class="edit-label-padding"><h4>Edit Labels</h4>
-    <div class="delete-input-done-align"><span class="material-icons-outlined">clear</span>
-         <input type="text" placeholder="Create new label" #ediptlabelinput>
-         <span class="material-symbols-outlined" (click)="getEditLabelsValue()">done</span></div>
-         <div *ngFor="let editvalue of element.keepNotesValue.editLabelArray" class="dispflex">
-            <span class="material-icons-outlined">delete_forever</span><div>{{editvalue.c}}</div></div></div>
-         
-         <div class="bottom-line"></div>
-        
-<div class="done-text-align edit-label-padding"><button (click)="getEditLabelsValue()">Done</button></div>
-</div>
+<div class="edit-labels-align dispflex" (click)="closebutton()" *ngIf="this.element.editlabelsshow">
+   <div class="edit-labels-style" (click)="$event.stopPropagation()">
+      <div class="edit-label-padding editlablesalign dispflex">
+         <h4>Edit Labels</h4>
+         <div class="delete-input-done-align dispflex"><span class="material-icons-outlined">clear</span>
+            <input type="text" placeholder="Create new label" #ediptlabelinput>
+            <span class="material-symbols-outlined" (click)="getEditLabelsValue()">done</span>
+         </div>
+         <div *ngFor="let editvalue of element.keepNotesValue.editLabelArray;index as i" class="dispflex">
+            <span class="material-icons-outlined" (click)="deleteEditLabels(i)">delete_forever</span>
+            <div>{{editvalue.c}}</div>
+         </div>
+      </div>
+
+      <div class="bottom-line"></div>
+
+      <div class="done-text-align edit-label-padding"><button (click)="getEditLabelsValue()">Done</button></div>
+   </div>
 </div>
