@@ -21,6 +21,7 @@ export class DataService {
   deletedvalue:any=[];
   takethetextcontent:string="Keep";
   x:any;
+  addlistshow:boolean=false;
   menuIconHighlight:boolean=false;
   searchElement:any;
   constructor() {
@@ -48,5 +49,7 @@ searchArrayFilter(element:any){
     this.searchElement = this.selectedvalue.filter(
       val => val.title.includes(element)
     );
+    console.log(element);
+    console.log(this.searchElement);
 }
 }

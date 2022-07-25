@@ -16,6 +16,7 @@ import { SearchcompComponent } from './searchcomp/searchcomp.component';
 import { CustomDirective } from './custom.directive';
 import { TransferPipe } from './transfer.pipe';
 import { DataService } from './data.service';
+import { IfDirective } from './if.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DataService } from './data.service';
     TrashchildComponent,
     SearchcompComponent,
     CustomDirective,
-    TransferPipe
+    TransferPipe,
+    IfDirective
   ],
   imports: [
     BrowserModule,

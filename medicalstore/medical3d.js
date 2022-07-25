@@ -277,6 +277,7 @@ var TotalAmount;
 function cashbilling() {
     var billing1 = document.createElement("div");
     billing1.className = "amount1";
+    billing1.id="am1";
     var bill1 = document.createElement("div");
     var cash1 = document.createTextNode(tabletName);
     var bill2 = document.createElement("div");

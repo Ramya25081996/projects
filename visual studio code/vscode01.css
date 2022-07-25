@@ -6,6 +6,7 @@
 }
 .dark{
     --headercol: #3c3c3c;
+    --backcol:#1e1e1e;
     --main01col:rgb(51,51,51);
     --main2col: rgb(37,37,38);
     --openbackcol:rgb(51,51,51);
@@ -45,6 +46,7 @@
 }
 .light{
     --headercol:#eee8d5;
+    --backcol:#FDF6E3;
     --main01col:#ddd6c1;
     --main2col:#EEE8D5;
     --openbackcol:#D9D2C2;
@@ -96,6 +98,7 @@
     display:grid;
     height:100vh;
     width:100vw;
+    background-color: var(--backcol);
     grid-template-rows: 30px auto 20px;
 }
 .header{

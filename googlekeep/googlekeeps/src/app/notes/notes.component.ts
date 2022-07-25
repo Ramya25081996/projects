@@ -59,7 +59,10 @@ export class NotesComponent implements OnInit {
     else{
       this.element.getkeepstextvalue(this.val1, this.val2,this.val3);
    }
-
+   
   }
+  // getthelist(){
+  //   this.element.addlistshow=!this.element.addlistshow;
+  //  }
 }
 

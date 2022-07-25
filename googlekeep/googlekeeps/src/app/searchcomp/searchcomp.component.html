@@ -1,3 +1,7 @@
 <div class="search-comp-align">
-<div class="border" routerLink="search" *ngFor="let y of this.element.searchElement" >{{y.title}}</div>
+<div class="border" routerLink="search" *ngFor="let y of this.element.searchElement" >
+    <div>Title:{{y.title}}</div>
+    <div>TextNote:{{y.textNote}}</div>
+    <div>List:{{y.List}}</div>
+</div>
 </div>

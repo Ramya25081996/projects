@@ -8,14 +8,11 @@ import { DataService } from '../data.service';
 })
 export class NavcompComponent implements OnInit {
  
-  @Output() takethetextcontent=new EventEmitter<string>();;
+  takethetextcontent!:string;
   constructor(public element:DataService) { }
 
   ngOnInit(): void {
   }
-  // getelementlist(value:any){
-  //   this.keepElementsList=value.target.innerText;
-  // }
   editlabilsbutton(){
     this.element.editlabelsshow=!this.element.editlabelsshow;
   }
