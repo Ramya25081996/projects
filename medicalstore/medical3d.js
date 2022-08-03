@@ -277,7 +277,6 @@ var TotalAmount;
 function cashbilling() {
     var billing1 = document.createElement("div");
     billing1.className = "amount1";
-    billing1.id="am1";
     var bill1 = document.createElement("div");
     var cash1 = document.createTextNode(tabletName);
     var bill2 = document.createElement("div");
@@ -305,6 +304,18 @@ function sample(id) {
     value1 = document.getElementById(id).children[0].innerHTML;
     document.getElementById("numb").value = "";
     search();
+}
+;
+var billValue;
+var totalValue;
+function newBill() {
+    if (billValue && totalValue == null) {
+        alert("please enter the quantity");
+    }
+    billValue = document.querySelector(".BillingAmount");
+    totalValue = document.querySelector("#billerAmount");
+    totalValue.innerText = "";
+    billValue.innerText = "";
 }
 function sorting() {
     medicalstore.medicalDetails.sort(function (a, b) {

@@ -207,9 +207,9 @@ var GenerateTabletId: string;
 rackMovement = document.querySelector(':root');
 function search() {
     if (CurrentTablet) {
-        let PreviousTabletId = document.getElementById(CurrentTablet);
+        let PreviousTabletId:any = document.getElementById(CurrentTablet);
         PreviousTabletId.classList.remove("green");
-        document.getElementById(Current).classList.remove("yellow");
+        (document.getElementById(Current)as HTMLFormElement).classList.remove("yellow");
     }
     tabletName = (document.getElementById("numb") as HTMLFormElement).value || value1;
     for (var i = 0; i <= medicalstore.medicalDetails.length; i++) {
@@ -217,41 +217,41 @@ function search() {
             i = i + 1;
             tabletpath = ("Rack Number : " + (Math.ceil(i / 9)) + "," + "Shelf Number : " + (Math.ceil((i % 9) / 3))) + "Tablet Number : " + i;
             findpath = Math.ceil(i / 9);
-            document.getElementById("FindTabletPath").innerHTML = tabletpath;
+            (document.getElementById("FindTabletPath") as HTMLFormElement).innerHTML = tabletpath;
             i = i - 1;
             rackNo = findpath - 1;
-            document.getElementById(medicalstore.medicalDetails[i].id).classList.add("green");
+            (document.getElementById(medicalstore.medicalDetails[i].id) as HTMLFormElement).classList.add("green");
             rackMovement.style.setProperty('--selectedrack', rackNo);
             CurrentTablet = tabletName;
             GenerateTabletId = `tab${i + 1}`;
-            document.getElementById(GenerateTabletId).classList.add("yellow");
+            (document.getElementById(GenerateTabletId) as HTMLFormElement).classList.add("yellow");
             Current = GenerateTabletId;
             return medicalstore.medicalDetails[i];
         }
         else {
-            document.getElementById("FindTabletPath").innerHTML = "Tablet is not available";
+            (document.getElementById("FindTabletPath") as HTMLFormElement).innerHTML = "Tablet is not available";
         }
     }
 };
 function billing() {
-    tabletDetails = search();
+    tabletDetails= search();
     saledTablet = (document.getElementById("numb1") as HTMLFormElement).value;
-    document.getElementById("s1").classList.add("red");
+    (document.getElementById("s1") as HTMLFormElement).classList.add("red");
     if (saledTablet < 0 || saledTablet > 100) {
-        document.getElementById("s1").innerHTML = "Invalid input";
+        (document.getElementById("s1") as HTMLFormElement).innerHTML = "Invalid input";
     }
     else {
         if (CurrentAvailableTablets <= 0) {
-            document.getElementById("s1").innerHTML = "Error:cannot be applied";
+            (document.getElementById("s1") as HTMLFormElement).innerHTML = "Error:cannot be applied";
             return;
         }
         tabletDetails.availabletablets = tabletDetails.availabletablets - saledTablet;
         CurrentAvailableTablets = tabletDetails.availabletablets;
-        document.getElementById("s1").innerHTML =CurrentAvailableTablets.toString();
-        document.getElementById(GenerateTabletId).children[1].innerHTML = CurrentAvailableTablets.toString();
+        (document.getElementById("s1") as HTMLFormElement).innerHTML =CurrentAvailableTablets.toString();
+        (document.getElementById(GenerateTabletId) as HTMLFormElement).children[1].innerHTML = CurrentAvailableTablets.toString();
         if (CurrentAvailableTablets < 30) {
-            document.getElementById(tabletDetails.id).classList.add("red");
-            document.getElementById(GenerateTabletId).classList.add("red");
+            (document.getElementById(tabletDetails.id) as HTMLFormElement).classList.add("red");
+            (document.getElementById(GenerateTabletId) as HTMLFormElement).classList.add("red");
         }
     }
     cashbilling();
@@ -259,7 +259,7 @@ function billing() {
 };
 
 function TabletListFormation() {
-    document.getElementById("list12").innerHTML = "";
+    (document.getElementById("list12") as HTMLFormElement).innerHTML = "";
     for (var k = 0; k < medicalstore.medicalDetails.length; k++) {
         const node01 = document.createElement("div");
         node01.className = "border1 list01";
@@ -273,10 +273,10 @@ function TabletListFormation() {
         node1.appendChild(text);
         node01.appendChild(node);
         node01.appendChild(node1);
-        document.getElementById("list12").appendChild(node01);
+        (document.getElementById("list12") as HTMLFormElement).appendChild(node01);
     }
 };
-var biller=[];
+var biller:any=[];
 var TotalAmount;
 function cashbilling(){
     var billing1=document.createElement("div");
@@ -300,13 +300,24 @@ function cashbilling(){
     billing1.appendChild(bill2);
     billing1.appendChild(bill3);
     billing1.appendChild(bill4);
-    document.getElementById("BillingAmount").appendChild(billing1);
-    document.getElementById("billerAmount").innerText = TotalAmount;
+    (document.getElementById("BillingAmount") as HTMLFormElement).appendChild(billing1);
+    (document.getElementById("billerAmount") as HTMLFormElement).innerText = TotalAmount;
 };
 function sample(id) {
-    value1 = document.getElementById(id).children[0].innerHTML;
+    value1 = (document.getElementById(id) as HTMLFormElement).children[0].innerHTML;
     (document.getElementById("numb") as HTMLFormElement).value = "";
     search();
+};
+var billValue;
+var totalValue;
+function newBill(){
+    if(billValue&&totalValue==null){
+        alert("please enter the quantity"); 
+    }
+    billValue=document.querySelector(".BillingAmount");
+    totalValue=document.querySelector("#billerAmount");
+    totalValue.innerText="";
+    billValue.innerText="";
 }
 function sorting() {
     medicalstore.medicalDetails.sort(function (a, b) {

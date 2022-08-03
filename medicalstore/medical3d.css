@@ -10,7 +10,8 @@
 body{
     width:100vw;
     height:100vh;
-    overflow-x: hidden;
+    overflow: hidden;
+
 } 
 .flex{
     display: flex;
@@ -31,10 +32,11 @@ body{
     gap:75px;
 }
 .prevbtn{
-    font-size: 15px;
-    padding: 4px;
-    background-color:#f3f3f4;
-    border: 1px solid  #bcaeae; 
+    background-color:#277da1;
+    border-radius: 15px;
+    padding: 7px 24px 7px 24px;
+    border: none;
+    color: white;
 }
 .grid1{
     grid-template-rows: auto 1fr;
@@ -45,16 +47,16 @@ body{
 }
 .justaligncent1{
     align-items: end;
-    justify-content: end;
+    justify-content: center;
 }
 .gap1{
     gap:10px;
 }
 .grid2{
-    background-color:#f3f3f4;
     font-size: 20px;
     padding: 15px;
     border-bottom: 1px solid #bcaeae;
+    background-color: #d9ecf3;
 }
 .flex2{
     flex-direction: column;
@@ -65,11 +67,12 @@ body{
     grid-template-rows: 1fr  auto;
 }
 .view{
-    position:absolute;
+    /* perspective: 1000px; */
+    position: absolute;
     top: 0%;
-    width:1500px;
-    height:600px;
-    perspective: 1000px;
+    width: 1500px;
+    height: 600px;
+    perspective: 1053px;
 }
 .borderstyle{
     border:1px solid black;
@@ -151,10 +154,11 @@ body{
     color:black;
 }
 .backcol1 {
-    background-color: #0fd5ce;
+    background-color:#3a6ea5;
+    color: white;
 }
 .green div{
-    background-color: green;
+    background-color:  #deb74e;
 }
 .red div{
     background-color: red;
@@ -276,9 +280,12 @@ body{
    display:grid;
     grid-template-columns:1.5fr 1fr 0.2fr 0.2fr;
 }
+.list01:nth-child(even){
+    background-color: #f2f3f4;
+}
 
 .yellow{
-    background-color:green;
+    background-color: #deb74e !important;
 }
 #list12{
     display:grid;
@@ -300,7 +307,8 @@ body{
     border:1px solid #bcaeae;
 }
 .boxheadingcolor{
-    background-color:#f3f3f4
+    background-color: #277da1;
+    color:white;
 }
 .bordercol1{
     border: none;
@@ -331,11 +339,11 @@ body{
     color:red;
 }
 #logoposition::before{
-    background-image: url('./pharmacy1.png');
-    background-size: 43px 24px;
-    width: 44px; 
+    background-image: url(./pharmacy.png);
+    background-size: 39px 24px;
+    width: 39px;
     height: 24px;
-    content:"";
+    content: "";
 }
 .colo{
     color:white !important;
@@ -384,8 +392,13 @@ body{
 }
 .bordertop{
     border-top: 1px solid #bcaeae;
-    text-align: end;
     padding-right: 42px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    display: flex;
+    gap: 75px;
+    justify-content: end;
 }
 .headerboxshadow{
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
@@ -395,4 +408,23 @@ body{
 }
 .borderradius{
     border-radius: 10px;
+}
+.listheadercolor{
+    background-color: #277da1;
+    color: white;
+}
+.buttonbill{
+    background-color: #277da1;
+    border-radius: 15px;
+    padding: 4px 9px 4px 10px;
+    border: none;
+    color: white;
+}
+input{
+    outline: none;
+}
+.quantitystyle{
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }

@@ -539,9 +539,9 @@
                         <div class="dispflex justaligncent gap1">
                             <div class="bordercol dispflex borderradius"><span class="material-icons-outlined">search</span><input
                                     id="numb" value="Tablet" class="bordercol1"></div>
-                            <button type="button" onclick="search()">Search</button><button type="button"
-                                onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical
-                                List</button>
+                            <button type="button" onclick="search()" class="buttonbill">Search</button>
+                            <!-- <button type="button" onclick="reload()">Refresh</button><button onclick="TabletListFormation()">Medical
+                                List</button> -->
                         </div>
 
                         <span>Tablet's Name(Tablet1 to Tablet45)</span>
@@ -551,7 +551,12 @@
                     <div class="widhheight">
                         <h3 class="textalign boxheadingcolor">Billing</h3>
                         
-                        <div class="padding"><span>Quantity : </span><input id="numb1" value="0"><button type="button" onclick="billing()">submit</button>
+                        <div class="padding">
+                            <div class="quantitystyle">
+                                <span>Quantity : </span><input id="numb1" value="0">
+                                <button type="button" class="buttonbill" onclick="billing()">submit</button>
+                                <button class="buttonbill" onclick="newBill()">Bill</button>
+                            </div>                  
                             <p>Total Capacity : <span class="capacitynumcol">100</span></p>
                             <p>Available Tablets : <span id="s1"></span></p>
                             <p>Saled Tablet : <span id="s2"></span></p>
@@ -574,13 +579,13 @@
                 </div>
                 <div class="paddingforlist zindex">
                     <div id="myList" class="dispgrid">
-                        <div class="list11">
-                            <div class="dispflex justaligncent bordercolor">TabletName</div>
-                            <div class="dispflex justaligncent bordercolor">Quantity</div>
-                            <button onclick="sorting()" class="bordercol1"><span
+                        <div class="list11 listheadercolor">
+                            <div class="dispflex justaligncent">TabletName</div>
+                            <div class="dispflex justaligncent">Quantity</div>
+                            <button onclick="sorting()"><span
                                     class="material-icons-outlined">arrow_downward</span>
                             </button>
-                            <button onclick="sorting1()" class="bordercol1"><span
+                            <button onclick="sorting1()"><span
                                     class="material-icons-outlined">arrow_upward</span></button>
                         </div>
                         <div id="list12"></div>
